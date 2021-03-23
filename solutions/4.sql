@@ -5,10 +5,14 @@ FROM bands
 JOIN albums ON bands.id = albums.band_id;
 
 /* If bands do not have a unique name then use this query */
-/* 
+/*
   SELECT bands.name AS 'Band Name'
   FROM bands
   JOIN albums ON bands.id = albums.band_id
   GROUP BY albums.band_id
   HAVING COUNT(albums.id) > 0;
 */
+
+-- my solution
+SELECT DISTINCT bands.name as 'Band Name' FROM bands
+JOIN albums on albums.band_id = bands.id;
