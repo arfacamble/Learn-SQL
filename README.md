@@ -1,3 +1,7 @@
+# Cloned from web dev simplified, practising basic SQL
+Exercises are below
+I have added my solutions in the solutions files above
+
 # Learn SQL
 If you haven't already make sure you watch [this video](https://youtu.be/p3qvj9hO_Bo) which will teach you all the basics of SQL in 60 minutes.
 
@@ -27,24 +31,24 @@ After successfully creating the table copy the code from [data.sql](data.sql) in
 
 Change the name of the column the data returns to `Band Name`
 
-| Band Name         | 
-|-------------------| 
-| Seventh Wonder    | 
-| Metallica         | 
-| The Ocean         | 
-| Within Temptation | 
-| Death             | 
-| Van Canto         | 
-| Dream Theater     | 
+| Band Name         |
+|-------------------|
+| Seventh Wonder    |
+| Metallica         |
+| The Ocean         |
+| Within Temptation |
+| Death             |
+| Van Canto         |
+| Dream Theater     |
 
 ### 3. Select the Oldest Album
 [Solution](solutions/3.sql)
 
 Make sure to only return one result from this query, and that you are not returning any albums that do not have a release year.
 
-| id | name                   | release_year | band_id | 
-|----|------------------------|--------------|---------| 
-| 5  | ...And Justice for All | 1988         | 2       | 
+| id | name                   | release_year | band_id |
+|----|------------------------|--------------|---------|
+| 5  | ...And Justice for All | 1988         | 2       |
 
 ### 4. Get all Bands that have Albums
 [Solution](solutions/4.sql)
@@ -53,14 +57,14 @@ There are multiple different ways to solve this problem, but they will all invol
 
 Return the band name as `Band Name`.
 
-| Band Name         | 
-|-------------------| 
-| Seventh Wonder    | 
-| Metallica         | 
-| The Ocean         | 
-| Within Temptation | 
-| Death             | 
-| Van Canto         | 
+| Band Name         |
+|-------------------|
+| Seventh Wonder    |
+| Metallica         |
+| The Ocean         |
+| Within Temptation |
+| Death             |
+| Van Canto         |
 
 ### 5. Get all Bands that have No Albums
 [Solution](solutions/5.sql)
@@ -69,9 +73,9 @@ This is very similar to #4 but will require more than just a join.
 
 Return the band name as `Band Name`.
 
-| Band Name     | 
-|---------------| 
-| Dream Theater | 
+| Band Name     |
+|---------------|
+| Dream Theater |
 
 ### 6. Get the Longest Album
 [Solution](solutions/6.sql)
@@ -80,9 +84,9 @@ This problem sounds a lot like #3 but the solution is quite a bit different. I w
 
 Return the album name as `Name`, the album release year as `Release Year`, and the album length as `Duration`.
 
-| Name           | Release Year | Duration          | 
-|----------------|--------------|-------------------| 
-| Death Magnetic | 2008         | 74.76666593551636 | 
+| Name           | Release Year | Duration          |
+|----------------|--------------|-------------------|
+| Death Magnetic | 2008         | 74.76666593551636 |
 
 ### 7. Update the Release Year of the Album with no Release Year
 [Solution](solutions/7.sql)
@@ -106,9 +110,9 @@ The order of how you delete the records is important since album has a foreign k
 
 Return the average length as `Average Song Duration`.
 
-| Average Song Duration | 
-|-----------------------| 
-| 5.352472513259112     | 
+| Average Song Duration |
+|-----------------------|
+| 5.352472513259112     |
 
 
 ### 11. Select the longest Song off each Album
@@ -116,26 +120,26 @@ Return the average length as `Average Song Duration`.
 
 Return the album name as `Album`, the album release year as `Release Year`, and the longest song length as `Duration`.
 
-| Album                       | Release Year | Duration | 
-|-----------------------------|--------------|----------| 
-| Tiara                       | 2018         | 9.5      | 
-| The Great Escape            | 2010         | 30.2333  | 
-| Mercy Falls                 | 2008         | 9.48333  | 
-| Master of Puppets           | 1986         | 8.58333  | 
-| ...And Justice for All      | 1988         | 9.81667  | 
-| Death Magnetic              | 2008         | 9.96667  | 
-| Heliocentric                | 2010         | 7.48333  | 
-| Pelagial                    | 2013         | 9.28333  | 
-| Anthropocentric             | 2010         | 9.4      | 
-| Resist                      | 2018         | 5.85     | 
-| The Unforgiving             | 2011         | 5.66667  | 
-| Enter                       | 1997         | 7.25     | 
-| The Sound of Perseverance   | 1998         | 8.43333  | 
-| Individual Thought Patterns | 1993         | 4.81667  | 
-| Human                       | 1991         | 4.65     | 
-| A Storm to Come             | 2006         | 5.21667  | 
-| Break the Silence           | 2011         | 6.15     | 
-| Tribe of Force              | 2010         | 8.38333  | 
+| Album                       | Release Year | Duration |
+|-----------------------------|--------------|----------|
+| Tiara                       | 2018         | 9.5      |
+| The Great Escape            | 2010         | 30.2333  |
+| Mercy Falls                 | 2008         | 9.48333  |
+| Master of Puppets           | 1986         | 8.58333  |
+| ...And Justice for All      | 1988         | 9.81667  |
+| Death Magnetic              | 2008         | 9.96667  |
+| Heliocentric                | 2010         | 7.48333  |
+| Pelagial                    | 2013         | 9.28333  |
+| Anthropocentric             | 2010         | 9.4      |
+| Resist                      | 2018         | 5.85     |
+| The Unforgiving             | 2011         | 5.66667  |
+| Enter                       | 1997         | 7.25     |
+| The Sound of Perseverance   | 1998         | 8.43333  |
+| Individual Thought Patterns | 1993         | 4.81667  |
+| Human                       | 1991         | 4.65     |
+| A Storm to Come             | 2006         | 5.21667  |
+| Break the Silence           | 2011         | 6.15     |
+| Tribe of Force              | 2010         | 8.38333  |
 
 ### 12. Get the number of Songs for each Band
 [Solution](solutions/12.sql)
@@ -144,11 +148,11 @@ This is one of the toughest question on the list. It will require you to chain t
 
 Return the band name as `Band`, the number of songs as `Number of Songs`.
 
-| Band              | Number of Songs | 
-|-------------------|-----------------| 
-| Seventh Wonder    | 35              | 
-| Metallica         | 27              | 
-| The Ocean         | 31              | 
-| Within Temptation | 30              | 
-| Death             | 27              | 
-| Van Canto         | 32              | 
+| Band              | Number of Songs |
+|-------------------|-----------------|
+| Seventh Wonder    | 35              |
+| Metallica         | 27              |
+| The Ocean         | 31              |
+| Within Temptation | 30              |
+| Death             | 27              |
+| Van Canto         | 32              |
